@@ -1,5 +1,7 @@
 // JavaScript Document
 
+var ON = "https://rawgit.com/letuan4388/DOANMONHOC/master/ON.png";
+var OFF = "https://rawgit.com/letuan4388/DOANMONHOC/master/OFF.png";
 var strGPIO1 = "";
 var strGPIO2 = "";
 
@@ -20,13 +22,13 @@ function GetGPIO() {
 function Process(xml) {
 	var x = xml.responseXML.getElementsByTagName("GPIO");
 	if (x[0].childNodes[0].nodeValue == "1")
-		document.getElementById("gpio1").innerHTML = "BẬT";
+		document.getElementById("gpio1").src = ON;
 	else
-		document.getElementById("gpio1").innerHTML = "TẮT";
+		document.getElementById("gpio1").src = OFF;
 	if (x[1].childNodes[0].nodeValue == "1")
-		document.getElementById("gpio2").innerHTML = "BẬT";
+		document.getElementById("gpio2").src = ON;
 	else
-		document.getElementById("gpio2").innerHTML = "TẮT";
+		document.getElementById("gpio2").src = OFF;
 }
 
 function SetGPIO(value) {
