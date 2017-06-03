@@ -1,9 +1,12 @@
 // JavaScript Document
 
+var LOGO = "https://rawgit.com/letuan4388/DOANMONHOC/master/Logo_HCMUT.png";
 var ON = "https://rawgit.com/letuan4388/DOANMONHOC/master/ON.png";
 var OFF = "https://rawgit.com/letuan4388/DOANMONHOC/master/OFF.png";
 var strGPIO1 = "";
 var strGPIO2 = "";
+
+document.getElementById("logo").src = LOGO;
 
 function GetGPIO() {
 	nocache = "&nocache=" + Math.random();
