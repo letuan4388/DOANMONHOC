@@ -2,8 +2,6 @@
 
 var strGPIO1 = "";
 var strGPIO2 = "";
-var GPIO1 = 0;
-var GPIO2 = 0;
 
 function GetGPIO() {
 	nocache = "&nocache=" + Math.random();
@@ -33,21 +31,11 @@ function Process(xml) {
 
 function SetGPIO(value) {
 	if (value == 1) {
-		strGPIO1 = "GPIO1";
-		GPIO1 = 1 - GPIO1;
+		strGPIO1 = "GPIO1";		
 	}
 	if (value == 2) {
 		strGPIO2 = "GPIO2";
-		GPIO2 = 1 - GPIO2;
 	}
-	if (GPIO1 == 1)
-		document.getElementById("gpio1").innerHTML = "BẬT";
-	else
-		document.getElementById("gpio1").innerHTML = "TẮT";
-	if (GPIO2 == 1)
-		document.getElementById("gpio2").innerHTML = "BẬT";
-	else
-		document.getElementById("gpio2").innerHTML = "TẮT";
 }
 
 function myFunction() {
