@@ -1,12 +1,10 @@
 // JavaScript Document
 
-var LOGO = "https://rawgit.com/letuan4388/DOANMONHOC/master/Logo_HCMUT.png";
+var BK = "https://rawgit.com/letuan4388/DOANMONHOC/master/Logo_HCMUT.png";
 var ON = "https://rawgit.com/letuan4388/DOANMONHOC/master/ON.png";
 var OFF = "https://rawgit.com/letuan4388/DOANMONHOC/master/OFF.png";
 var strGPIO1 = "";
 var strGPIO2 = "";
-
-
 
 function GetGPIO() {
 	nocache = "&nocache=" + Math.random();
@@ -44,6 +42,6 @@ function SetGPIO(value) {
 }
 
 function myFunction() {
-	document.getElementById("logo").src = LOGO;
+	document.getElementById("logo").src = BK;
 	setInterval("GetGPIO()", 500);
 }
