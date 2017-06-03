@@ -6,7 +6,7 @@ var OFF = "https://rawgit.com/letuan4388/DOANMONHOC/master/OFF.png";
 var strGPIO1 = "";
 var strGPIO2 = "";
 
-document.getElementById("logo").src = LOGO;
+
 
 function GetGPIO() {
 	nocache = "&nocache=" + Math.random();
@@ -44,5 +44,6 @@ function SetGPIO(value) {
 }
 
 function myFunction() {
+	document.getElementById("logo").src = LOGO;
 	setInterval("GetGPIO()", 500);
 }
