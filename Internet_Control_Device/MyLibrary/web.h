@@ -1,0 +1,43 @@
+#ifndef LIB_WEB_H_
+#define LIB_WEB_H_
+
+static char website[] =
+"HTTP/1.1 200 OK\r\n"           
+"Content-Type: text/html\r\n"
+"Pragma: no-cache\r\n\r\n"
+"<!doctype html>"
+"<html>"
+"<head>"	
+"<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>"
+"<title>CONTROL DEVICE</title>"
+"<link href='https://rawgit.com/letuan4388/DOANMONHOC/master/doanmonhoc.css' rel='stylesheet' type='text/css' />"
+"</head>"
+"<body onload='myFunction()'>"
+"<div id='header'>"
+"<img id='logo'/>"
+"<h1>TRƯỜNG ĐẠI HỌC BÁCH KHOA</h1>"
+"<h2>KHOA ÐIỆN - ĐIỆN TỬ</h2>"
+"</div>"
+"<div id='main'>"
+"<h2>ÐỒ ÁN MÔN HỌC</h2>"
+"<h1>ÐIỀU KHIỂN THIẾT BỊ QUA INTERNET</h1>"
+"<table>"
+"<tr>"
+"<td>Thiết bị 1</td>"
+"<td><button onclick='SetGPIO(1)'>ON/OFF</button></td>"
+"<td><img id='gpio1'/></td>"
+"</tr>"    
+"<tr>"
+"<td>Thiết bị 2</td>"
+"<td><button onclick='SetGPIO(2)'>ON/OFF</button></td>"
+"<td><img id='gpio2'/></td>"
+"</tr>"
+"</table>"
+"</div>"
+"<div id='footer'>Thiết kế bởi Lê Ðình Tuấn và Trịnh Thanh Tùng</div>"
+"</div>"
+"<script src='https://rawgit.com/letuan4388/DOANMONHOC/master/doanmonhoc.js'></script>"
+"</body>"
+"</html>";
+
+#endif /* LIB_WEB_H_ */

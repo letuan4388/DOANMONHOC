@@ -1,0 +1,1 @@
+"./ESP8266.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./MyLibrary/init.obj" "./MyLibrary/strings.obj" "./MyLibrary/time.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd" -llibc.a 
